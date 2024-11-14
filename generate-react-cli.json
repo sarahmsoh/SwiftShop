@@ -6,8 +6,8 @@
   "testLibrary": "None",
   "component": {
     "default": {
-      "path": "src/components",
-      "withStyle": false,
+      "path": "src/components"
+      "withStyle": true,
       "withTest": false,
       "withStory": false,
       "withLazy": false

@@ -1,7 +1,12 @@
 
+
 import React, { useState, useEffect } from 'react';
 import ProductList from './components/ProductList/ProductList';
 import ProductCard from './components/ProductCard/ProductCard';
+
+import React from 'react';
+import Contact from './components/Contact';
+import Footer from './components/Footer'
 
 function App() {
   const [cart, setCart] = useState([]);
@@ -27,6 +32,7 @@ function App() {
   };
 
   return (
+
     <div className="App container mx-auto p-6">
       <h1 className="text-3xl font-bold text-center mb-6">Shop</h1>
 
@@ -50,8 +56,31 @@ function App() {
           <button className="bg-green-500 text-white py-2 px-4 rounded">Checkout</button>
         </div>
       </div>
+    <div className="App">
+      <header style={headerStyle}>
+        <h1>ShopEasy with us</h1>
+      </header>
+
+      <main style={mainContentStyle}>
+
+        <Contact />
+      </main>
+
+      <Footer />
     </div>
   );
 }
+
+const headerStyle = {
+  backgroundColor: '#2575',
+  color: 'white',
+  padding: '20px',
+  textAlign: 'center',
+};
+
+const mainContentStyle = {
+  padding: '20px',
+  textAlign: 'center',
+};
 
 export default App;
