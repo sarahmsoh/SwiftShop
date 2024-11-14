@@ -1,14 +1,38 @@
 
 
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom';
+import Login from './components/Login/Login';  
+import Home from './components/Home/Home';   
+import NavBar from './components/NavBar/NavBar';  
+
+
 import React, { useState, useEffect } from 'react';
 import ProductList from './components/ProductList/ProductList';
 import ProductCard from './components/ProductCard/ProductCard';
+
 
 import React from 'react';
 import Contact from './components/Contact';
 import Footer from './components/Footer'
 
+
 function App() {
+
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const navigate = useNavigate();
+
+  
+  const handleLogin = () => {
+    setIsLoggedIn(true);
+    navigate('/home');  
+  };
+
+  
+  const onLogout = () => {
+    setIsLoggedIn(false);
+    navigate('/login'); 
+
   const [cart, setCart] = useState([]);
   const [products, setProducts] = useState([]);
 
@@ -29,9 +53,28 @@ function App() {
   const handleAddToCart = (product) => {
     setCart((prevCart) => [...prevCart, product]);
     console.log(`${product.name} added to cart!`);
+
   };
 
   return (
+
+
+    <>
+      <div>
+        {isLoggedIn && <NavBar onLogout={onLogout} />} 
+
+        <Routes>
+         
+          <Route
+            path="/"
+            element={<Login onLogin={handleLogin} />} 
+          />
+
+          <Route path="/home" element={<Home />} />
+        </Routes>
+      </div>
+    </>
+
 
     <div className="App container mx-auto p-6">
       <h1 className="text-3xl font-bold text-center mb-6">Shop</h1>
@@ -56,6 +99,7 @@ function App() {
           <button className="bg-green-500 text-white py-2 px-4 rounded">Checkout</button>
         </div>
       </div>
+
     <div className="App">
       <header style={headerStyle}>
         <h1>ShopEasy with us</h1>
@@ -68,6 +112,7 @@ function App() {
 
       <Footer />
     </div>
+
   );
 }
 

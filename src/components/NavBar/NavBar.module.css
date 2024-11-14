@@ -1,0 +1,39 @@
+/* Make the navbar stay at the top of the page */
+.navbar {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky; /* Stick to the top */
+  top: 0;
+  width: 100%;
+  z-index: 10; /* Make sure it's above other content */
+}
+
+.navLinks {
+  display: flex;
+  gap: 20px;
+}
+
+.navLink {
+  color: white;
+  text-decoration: none;
+}
+
+.navLink:hover {
+  text-decoration: underline;
+}
+
+.logoutButton {
+  padding: 5px 10px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.logoutButton:hover {
+  background-color: #d32f2f;
+}
