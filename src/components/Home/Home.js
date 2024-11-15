@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import styles from './Home.module.css'; 
+import styles from './Home.module.css';
 import NavBar from '../NavBar/NavBar';
 
 
@@ -8,8 +8,8 @@ function Home({ onLogout }) {
   const navigate = useNavigate();
 
   const handleLogout = () => {
-    onLogout(); 
-    navigate('/login'); 
+    onLogout();
+    navigate('/login');
   };
 
   return (
@@ -24,6 +24,7 @@ function Home({ onLogout }) {
         <p>Start Shopping!</p>
       </div>
       <h1>AVAILABLE GOODS: </h1>
+
     </div>
   );
 }

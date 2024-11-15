@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+# ShopEasy - React E-commerce App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ShopEasy is a simple React-based e-commerce application where users can view products, add them to their cart, and proceed to checkout. The app includes user authentication, product fetching from a JSON server, and cart functionality. This project is built using React, React Router, and JSON Server as a mock API.
 
-## Available Scripts
+## Features
+- **Login/Logout**: Basic login functionality to access the home page.
+- **Product Listing**: Fetches products from a mock API and displays them.
+- **Shopping Cart**: Users can add products to their cart and view the items added.
+- **Checkout Button**: A simple button to simulate the checkout process.
+- **Routing**: React Router for page navigation between the Login and Home page.
 
-In the project directory, you can run:
+## Technologies Used
+- **React**: Frontend library to build the UI.
+- **React Router**: For handling routing and navigation.
+- **JSON Server**: For simulating a REST API to serve product data.
+- **Tailwind CSS**: For styling and layout.
 
-### `npm start`
+## Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Prerequisites
+- **Node.js**: You should have Node.js installed. [Download Node.js](https://nodejs.org/)
+- **npm**: npm (Node package manager) should be installed with Node.js. You can check if npm is installed by running `npm -v` in the terminal.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Steps to Get Started
 
-### `npm test`
+1. **Clone the repository**:
+   First, clone the repository to your local machine.
+   ```bash
+   git clone https://github.com/yourusername/shopeasy.git
+   cd shopeasy
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  Usage
+Login: When you first load the application, you'll be redirected to the login page. Click the login button to simulate logging in.
 
-### `npm run build`
+Home Page: After logging in, you’ll be redirected to the home page where you can view the list of products fetched from the JSON server.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Add to Cart: Click the "Add to Cart" button on any product to add it to your shopping cart.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+View Cart: The cart will display the number of items added. You can view the product names and prices.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Checkout: The checkout button does not perform any actual action, but it’s displayed as part of the app's functionality.
+## License
+Swiftshop 2024
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License - see the LICENSE file for details.
