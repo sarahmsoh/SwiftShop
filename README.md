@@ -1,4 +1,4 @@
-# ShopEasy - React E-commerce App
+# SwiftShop - React E-commerce App
 
 ShopEasy is a simple React-based e-commerce application where users can view products, add them to their cart, and proceed to checkout. The app includes user authentication, product fetching from a JSON server, and cart functionality. This project is built using React, React Router, and JSON Server as a mock API.
 
@@ -26,10 +26,11 @@ ShopEasy is a simple React-based e-commerce application where users can view pro
 1. **Clone the repository**:
    First, clone the repository to your local machine.
    ```bash
-   git clone https://github.com/yourusername/shopeasy.git
-   cd shopeasy
+   git clone https://github.com/yourusername/swiftshop.git
+   cd swiftshop
 
-  Usage
+## Usage
+
 Login: When you first load the application, you'll be redirected to the login page. Click the login button to simulate logging in.
 
 Home Page: After logging in, you’ll be redirected to the home page where you can view the list of products fetched from the JSON server.

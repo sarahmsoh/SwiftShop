@@ -1,13 +1,16 @@
-
 import React from 'react';
 import ProductCard from '../ProductCard/ProductCard';
+import styles from './ProductList.module.css';
 
 const ProductList = ({ products, onAddToCart }) => {
   return (
-    <div className="product-list grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-      {products.map((product) => (
-        <ProductCard key={product.id} product={product} onAddToCart={onAddToCart} />
-      ))}
+    <div className={styles.productList}>
+      <h1 className={styles.title}>Available Goods</h1>
+      <div className={styles.grid}>
+        {products.map((product) => (
+          <ProductCard key={product.id} product={product} onAddToCart={onAddToCart} />
+        ))}
+      </div>
     </div>
   );
 };

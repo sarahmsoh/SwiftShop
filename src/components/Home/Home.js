@@ -15,7 +15,6 @@ function Home({ onLogout }) {
   return (
     <div className={styles.homeContainer}>
       {/* Logout Button at the top */}
-      <NavBar/>
 
       {/* Content of the home page */}
       <div className={styles.homeContent}>
@@ -23,7 +22,7 @@ function Home({ onLogout }) {
         <h3>ShopEasy with us🎉</h3>
         <p>Start Shopping!</p>
       </div>
-      <h1>AVAILABLE GOODS: </h1>
+
 
     </div>
   );

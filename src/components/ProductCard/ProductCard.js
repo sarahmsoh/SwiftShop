@@ -36,6 +36,7 @@ const ProductCard = ({ product, onAddToCart }) => {
           align-items: center;
           height: 50vh; /* Full height of the viewport */
           background-color: #f7fafc; /* Light background for contrast */
+          margin-bottom: 60px
         }
 
         .product-card {
